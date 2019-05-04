@@ -1,0 +1,45 @@
+data:
+i 2
+j 2
+two 2
+one 1
+max 9999
+labels:
+start
+innerloop
+nexti
+end
+printi
+printreturn
+instructions:
+start
+load i
+sub max
+jumpz end
+innerloop
+load i
+sub j
+jumpz nexti //j is too big
+load i
+mod j
+jumpz nexti //i is not prime
+load j
+add one
+store j
+jump innerloop
+nexti
+load i
+sub j
+jumpz printi
+printreturn
+load two
+store j
+load i
+add one
+store i
+jump start
+printi
+write i
+jump printreturn
+end
+halt

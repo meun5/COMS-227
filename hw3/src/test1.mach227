@@ -1,0 +1,10 @@
++3007 load count
++6306 jumpz point_b (label point_a)
++2007 write count
++5108 sub const_one
++4007 store count
++6001 jump point_a
++8000 halt (label point_b)
++0010 count
++0001 const_one
+-99999

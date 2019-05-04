@@ -1,0 +1,31 @@
++3025 load i (label start)
++5129 sub max
++6324 jumpz end
++3025 load i (label innerloop)
++5126 sub j
++6313 jumpz nexti
++3025 load i
++5326 mod j
++6313 jumpz nexti
++3026 load j
++5028 add one
++4026 store j
++6003 jump innerloop
++3025 load i (label nexti)
++5126 sub j
++6322 jumpz printi
++3027 load two (label printreturn)
++4026 store j
++3025 load i
++5028 add one
++4025 store i
++6000 jump start
++2025 write i (label printi)
++6016 jump printreturn
++8000 halt (label end)
++0002 i
++0002 j
++0002 two
++0001 one
++9999 max
+-99999

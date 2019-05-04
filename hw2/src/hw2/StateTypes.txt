@@ -1,0 +1,13 @@
+package hw2;
+
+public enum StateTypes {
+	Bowls,
+	Overs,
+	Score,
+	Outs,
+	Innings,
+	BattingSide,
+	IsInPlay,
+	IsRunning,
+	HasTheGameEnded,
+}

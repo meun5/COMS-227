@@ -1,0 +1,16 @@
+data:
+count 10         count = 10
+const_one 1
+labels:
+point_a
+point_b
+instructions:
+load count
+point_a         
+jumpz point_b    while count != 0
+write count          print the value of count
+sub const_one        count = count - 1
+store count
+jump point_a         (go back to top of loop)
+point_b
+halt

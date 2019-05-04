@@ -1,0 +1,29 @@
++1023 read i
++3023 load i
++5125 sub one (label start)
++6321 jumpz end
++3025 load one
++5024 add count
++4024 store count
++3023 load i
++5326 mod two
++6317 jumpz even
++3027 load three
++5423 mul i
++4023 store i
++3025 load one
++5023 add i
++4023 store i
++6002 jump start
++3023 load i (label even)
++5226 div two
++4023 store i
++6002 jump start
++2024 write count (label end)
++8000 halt
++0000 i
++0000 count
++0001 one
++0002 two
++0003 three
+-99999

@@ -1,0 +1,37 @@
+data:
+i 0
+count 0
+one 1
+two 2
+three 3
+labels:
+start
+end
+even
+instructions:
+read i Read value from user
+load i Load it into accumulator
+start Top of loop
+sub one Terminate when i is one
+jumpz end
+load one Increment count each iteration
+add count
+store count
+load i
+mod two
+jumpz even
+load three If i is odd, mul 3 and add 1
+mul i
+store i
+load one
+add i
+store i
+jump start
+even
+load i Else divide by two
+div two
+store i
+jump start
+end
+write count Print total iterations
+halt
